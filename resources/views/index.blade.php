@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Gempar Code</title>
+	<title>Listrik Biru</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="SHORTCUT ICON" href="img/logo/colokan.png">
 </head>
