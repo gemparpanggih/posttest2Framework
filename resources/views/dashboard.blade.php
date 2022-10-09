@@ -9,15 +9,16 @@
 
 	<div class="container">
     <br>
-	<h2><a href="#">Kepegawaian PT Sinar Matahari Fana</a></h2>
+	<h2><a href="/">PT Listrik Biru</a></h2>
     <br>
-	<h3>Data Pegawai</h3>
+	<h3>Data Pelanggan</h3>
 	<br/>
 
 		<table border="1" class="table table-hover table-striped">
             <tr class="mode">
                 <th scope="col">#</th>
                 <th scope="col">Nama</th>
+                <th scope="col">Alamat</th>
                 <th scope="col">Nometer</th>
                 <th scope="col">Voltase</th>
             </tr>
@@ -25,6 +26,7 @@
                 <tr class="mode">
                 <th scope="row">{{ $pelanggan->id}}</th>
                     <td>{{ $pelanggan->nama}}</td>
+                    <td>{{ $pelanggan->alamat}}</td>
                     <td>{{ $pelanggan->nometer}}</td>
                     <td>{{ $pelanggan->tarif->voltase}}</td>
                 </tr>

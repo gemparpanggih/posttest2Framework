@@ -25,7 +25,7 @@ Route::get('/', function () {
         'tarifs' => Tarif::all(),
         'pelanggans' => Pelanggan::all() /* Ganti Line Ini */
     ]);
-})->name('index');
+});
 
 Route::get('/dashboard', function () {
 
