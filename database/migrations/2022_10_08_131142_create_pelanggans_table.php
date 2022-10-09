@@ -20,7 +20,7 @@ return new class extends Migration
             $table->integer('nometer');
             $table->string('nama');
             $table->string('alamat');
-            // $table->string('kodetarif');
+            $table->foreignId('tarif_id');
             $table->timestamps();
         });
     }

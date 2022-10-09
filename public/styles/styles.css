@@ -176,7 +176,7 @@ nav{
 
 .container-2{
 	width: 100%;
-	height: 1950px;
+	height: auto;
 	overflow: hidden;
 	background: rgb(18, 169, 196);
 	color: rgb(255, 255, 255);

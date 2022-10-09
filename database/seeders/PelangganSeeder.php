@@ -21,6 +21,7 @@ class PelangganSeeder extends Seeder
                 'password' => 'panggih',
                 'nometer' => '5678',
                 'nama' => 'Gempar Panggih Dwi Putra',
+                'tarif_id' => '1',
                 'alamat' => 'Jln. Sultan Sulaiman',
             ],
             [
@@ -29,6 +30,7 @@ class PelangganSeeder extends Seeder
                 'password' => 'satria',
                 'nometer' => '5679',
                 'nama' => 'Acun, Lord of Chaos',
+                'tarif_id' => '2',
                 'alamat' => 'Jln. Go to Sage Realms',
             ],
         ];

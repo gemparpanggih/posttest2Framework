@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Pelanggan;
+use App\Models\Tarif;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('index');
+// });
+
 Route::get('/', function () {
-    return view('index');
-});
+
+    return view('index', [
+        'tarifs' => Tarif::all(),
+        'pelanggans' => Pelanggan::all() /* Ganti Line Ini */
+    ]);
+})->name('index');
 

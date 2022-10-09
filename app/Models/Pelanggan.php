@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pelanggan extends Model
 {
+    public function tarif() {
+        return $this->belongsTo(Tarif::class);
+    }
+
     use HasFactory;
 
     protected $table = 'pelanggans';

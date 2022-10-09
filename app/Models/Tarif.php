@@ -7,8 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tarif extends Model
 {
+    public function pelanggan() {
+        return $this->hasMany(Pelanggan::class);
+    }
+
     use HasFactory;
 
     protected $table = 'tarifs';
-    protected $fillable = ['id', 'kodetarif', 'voltase', 'biaya/kWh' ];
+    protected $fillable = ['id', 'voltase', 'biaya/kWh' ];
 }

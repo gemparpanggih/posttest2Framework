@@ -87,9 +87,9 @@
 
         <div class="table-container">
 
-            @php
+            <!-- @php
                 $conn = mysqli_connect("localhost", "root", "", "posttest_framework");
-                $sql = "SELECT * FROM tokens";
+                $sql = "SELECT * FROM pelanggans";
                 $result = $conn->query($sql);
             @endphp
             <div class="price-container mode">
@@ -98,10 +98,11 @@
                     <table class="table">
                         <thead class="mode">
                             <tr class="mode">
-                                <th scope='col'>No</th>
-                                <th scope='col'>Golongan</th>
-                                <th scope='col'>Voltase</th>
-                                <th scope='col'>Price</th>
+                                <th scope='col'>ID</th>
+                                <th scope='col'>Username</th>
+                                <th scope='col'>Nometer</th>
+                                <th scope='col'>Nama</th>
+                                <th scope='col'>Alamat</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -110,9 +111,10 @@
                                     echo "
                                         <tr class='mode'>
                                             <td scope='row'>". $row["id"]."</td>
-                                            <td>". $row["golongan"]."</td>
-                                            <td>". $row["voltase"]."</td>
-                                            <td>Rp.". $row["biaya/kWh"]."/day</td>
+                                            <td>". $row["username"]."</td>
+                                            <td>". $row["nometer"]."</td>
+                                            <td>". $row["nama"]."</td>
+                                            <td>". $row["alamat"]."</td>
                                         </tr>
                                         ";
                                 }
@@ -120,7 +122,37 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div> -->
+
+
+                    <div class="price-container mode">
+                        <h3 class="mode">Price List</h3>
+                            <div class="price-table">
+                                <table class="table">
+                                    <thead class="mode">
+                                        <tr class="mode">
+                                            <th scope="col">#</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Nometer</th>
+                                            <th scope="col">Voltase</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach ($pelanggans as $pelanggan)
+                                            <tr class="mode">
+                                                <th scope="row">{{ $pelanggan->id}}</th>
+                                                <td>{{ $pelanggan->nama}}</td>
+                                                <td>{{ $pelanggan->nometer}}</td>
+                                                <td>{{ $pelanggan->tarif->voltase}}</td>
+                                                {{-- Cukup Panggil seperti di atas --}}
+
+                                            </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+
         </div>
 
     </div>
@@ -136,7 +168,6 @@
             <div class="sosmed">
                 <h4 class="mode">Find Us On</h4>
                 <div class="circle-container">
-                    <!-- salah satu fitur pop up box -->
                     <div class="circle ig">
                         <a href="https://www.instagram.com/" onclick="return confirm('Click OK untuk Lanjutkan.');"><img src="img/sosmed/instagram.png" alt=""></a>
                     </div>
@@ -162,3 +193,4 @@
     <script src="https://kit.fontawesome.com/a374d5ed26.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
