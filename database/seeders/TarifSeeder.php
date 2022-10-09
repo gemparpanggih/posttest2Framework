@@ -16,18 +16,22 @@ class TarifSeeder extends Seeder
     {
         $tarif = [
             [
+                'kodetarif' => 'lb1',
                 'voltase' => '0-450 VA',
                 'biaya/kWh' => '169',
             ],
             [
+                'kodetarif' => 'lb2',
                 'voltase' => '451-900 VA',
                 'biaya/kWh' => '274',
             ],
             [
+                'kodetarif' => 'lb3',
                 'voltase' => '901-1300 VA',
                 'biaya/kWh' => '1444',
             ],
             [
+                'kodetarif' => 'lb4',
                 'voltase' => '1.301-2.200 VA',
                 'biaya/kWh' => '1444',
             ],

@@ -14,5 +14,5 @@ class Tarif extends Model
     use HasFactory;
 
     protected $table = 'tarifs';
-    protected $fillable = ['id', 'voltase', 'biaya/kWh' ];
+    protected $fillable = ['id', 'kodetarif', 'voltase', 'biaya/kWh' ];
 }

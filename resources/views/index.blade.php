@@ -143,7 +143,7 @@
                                                 <th scope="row">{{ $pelanggan->id}}</th>
                                                 <td>{{ $pelanggan->nama}}</td>
                                                 <td>{{ $pelanggan->nometer}}</td>
-                                                <td>{{ $pelanggan->tarif->voltase}}</td>
+                                                <td>{{ $pelanggan->tarif->kodetarif}}</td>
                                                 {{-- Cukup Panggil seperti di atas --}}
 
                                             </tr>

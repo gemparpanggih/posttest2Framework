@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('tarifs', function (Blueprint $table) {
             $table->id();
+            $table->string('kodetarif');
             $table->string('voltase');
             $table->integer('biaya/kWh');
             $table->timestamps();

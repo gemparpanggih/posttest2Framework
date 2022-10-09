@@ -33,6 +33,33 @@ class PelangganSeeder extends Seeder
                 'tarif_id' => '2',
                 'alamat' => 'Jln. Go to Sage Realms',
             ],
+            [
+                // 'id' => '2',
+                'username' => 'acul',
+                'password' => 'satria',
+                'nometer' => '5679',
+                'nama' => 'Acun, Lord of Chaos',
+                'tarif_id' => '2',
+                'alamat' => 'Jln. Go to Sage Realms',
+            ],
+            [
+                // 'id' => '2',
+                'username' => 'daffa',
+                'password' => 'satria',
+                'nometer' => '5679',
+                'nama' => 'Acun, Lord of Chaos',
+                'tarif_id' => '2',
+                'alamat' => 'Jln. Go to Sage Realms',
+            ],
+            [
+                // 'id' => '2',
+                'username' => 'risky',
+                'password' => 'satria',
+                'nometer' => '5679',
+                'nama' => 'Acun, Lord of Chaos',
+                'tarif_id' => '2',
+                'alamat' => 'Jln. Go to Sage Realms',
+            ],
         ];
 
         foreach ($pelanggan as $plg){
