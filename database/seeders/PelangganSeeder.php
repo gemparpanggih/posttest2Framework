@@ -25,7 +25,6 @@ class PelangganSeeder extends Seeder
                 'alamat' => 'Jln. Sultan Sulaiman',
             ],
             [
-                // 'id' => '2',
                 'username' => 'yanuar',
                 'password' => 'satria',
                 'nometer' => '5679',
@@ -34,7 +33,6 @@ class PelangganSeeder extends Seeder
                 'alamat' => 'Jln. Go to Sage Realms',
             ],
             [
-                // 'id' => '2',
                 'username' => 'acul',
                 'password' => 'satria',
                 'nometer' => '5679',
@@ -43,7 +41,6 @@ class PelangganSeeder extends Seeder
                 'alamat' => 'Jln. Go to Sage Realms',
             ],
             [
-                // 'id' => '2',
                 'username' => 'daffa',
                 'password' => 'satria',
                 'nometer' => '5679',
@@ -52,7 +49,6 @@ class PelangganSeeder extends Seeder
                 'alamat' => 'Jln. Go to Sage Realms',
             ],
             [
-                // 'id' => '2',
                 'username' => 'risky',
                 'password' => 'satria',
                 'nometer' => '5679',

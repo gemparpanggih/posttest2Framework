@@ -27,3 +27,11 @@ Route::get('/', function () {
     ]);
 })->name('index');
 
+Route::get('/dashboard', function () {
+
+    return view('dashboard', [
+        'tarifs' => Tarif::all(),
+        'pelanggans' => Pelanggan::all() /* Ganti Line Ini */
+    ]);
+});
+

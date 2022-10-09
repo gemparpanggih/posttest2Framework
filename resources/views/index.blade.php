@@ -16,7 +16,7 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a class="mode" href="#contact">Contact Us</a></li>
+                        <li><a class="mode" href="/dashboard">Dashboard</a></li>
                         <li><a class="mode" href="#aboutus">About Us</a></li>
                         <li><a class="mode" href="#voltase">Voltase List</a></li>
                         <li><button class="mode" onclick="result()">Night Mode</button></li>
