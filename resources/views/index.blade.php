@@ -87,43 +87,6 @@
 
         <div class="table-container">
 
-            <!-- @php
-                $conn = mysqli_connect("localhost", "root", "", "posttest_framework");
-                $sql = "SELECT * FROM pelanggans";
-                $result = $conn->query($sql);
-            @endphp
-            <div class="price-container mode">
-                <h3 class="mode">Price List</h3>
-                <div class="price-table">
-                    <table class="table">
-                        <thead class="mode">
-                            <tr class="mode">
-                                <th scope='col'>ID</th>
-                                <th scope='col'>Username</th>
-                                <th scope='col'>Nometer</th>
-                                <th scope='col'>Nama</th>
-                                <th scope='col'>Alamat</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @php
-                                while($row = $result-> fetch_assoc()) {
-                                    echo "
-                                        <tr class='mode'>
-                                            <td scope='row'>". $row["id"]."</td>
-                                            <td>". $row["username"]."</td>
-                                            <td>". $row["nometer"]."</td>
-                                            <td>". $row["nama"]."</td>
-                                            <td>". $row["alamat"]."</td>
-                                        </tr>
-                                        ";
-                                }
-                            @endphp
-                        </tbody>
-                    </table>
-                </div>
-            </div> -->
-
 
                     <div class="price-container mode">
                         <h3 class="mode">Price List</h3>
